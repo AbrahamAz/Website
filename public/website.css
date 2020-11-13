@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.back-image {
+  position: fixed;
+}
+
+/* Navigation Section */
+.navbar .navbar-brand {
+  color: #fff;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 2rem;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
+  background-color: white;
+}
+
+/* Footer Section */
+#footer {
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  top: 760px;
+}
+
+.icons a {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 2%;
+}
+
+/* LOGO Section */
+#logo {
+  position: relative;
+}
+
+.logo-image {
+  width: 90px;
+  margin: 10px 10px 0 0;
+}
+
+.logo-ani {
+  position: fixed;
+}
+
+.ani-1 {
+  width: 400px;
+  left: 38.5%;
+  top: 30%;
+  animation-name: slide;
+  animation-duration: 3.8s;
+  animation-timing-function: ease;
+}
+
+.ani-2 {
+  width: 400px;
+  left: 38.5%;
+  top: 30%;
+  animation-name: slide;
+  animation-duration: 3.6s;
+  animation-timing-function: ease;
+}
+
+.ani-3 {
+  width: 400px;
+  left: 38.5%;
+  top: 30%;
+  animation-name: slide;
+  animation-duration: 3.4s;
+  /* animation-timing-function: ease; */
+}
+
+.ani-4 {
+  width: 400px;
+  left: 38.5%;
+  top: 30%;
+  animation-name: slide;
+  animation-duration: 3.2s;
+  animation-timing-function: ease;
+}
+
+.ani-5 {
+  width: 400px;
+  left: 38.5%;
+  top: 30%;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes slide {
+  from {
+    top: -40%;
+    transform: rotate(-60deg);
+    opacity: 0;
+  }
+
+  to {
+    top: 30%;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
