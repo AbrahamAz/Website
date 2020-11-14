@@ -5,6 +5,7 @@ body {
 
 .back-image {
   position: fixed;
+  width: 100%;
 }
 
 /* Navigation Section */
@@ -21,7 +22,7 @@ body {
 }
 
 .collapse .navbar-nav .nav-item .nav-link:hover {
-  color: black;
+  opacity: 0.5;
 }
 
 .navbar-light .navbar-toggler {
@@ -89,7 +90,7 @@ body {
 
 .ani-4 {
   width: 400px;
-  left: 30%;
+  left: 38.5%;
   top: 30%;
   transform: rotate(222deg);
   animation-name: slide2;
@@ -103,24 +104,6 @@ body {
   opacity: 0;
   animation-name: slide1;
   animation-duration: 3s;
-  animation-timing-function: ease;
-}
-
-.ani-6 {
-  width: 400px;
-  top: 9.5%;
-  left: 36.5%;
-  animation-name: slide6;
-  animation-duration: 15s;
-  animation-timing-function: ease;
-}
-
-.ani-7 {
-  width: 400px;
-  top: 9.5%;
-  left: 41.5%;
-  animation-name: slide7;
-  animation-duration: 15s;
   animation-timing-function: ease;
 }
 
@@ -172,12 +155,8 @@ body {
     left: 38.5%;
   }
 
-  50% {
-    left: 38.5%;
-  }
-
   to {
-    left: 30%;
+    left: 38.5%;
   }
 }
 
@@ -242,40 +221,6 @@ body {
     transform: rotate(360deg);
     opacity: 0;
     left: 120vw;
-  }
-}
-
-@keyframes slide6 {
-  from {
-    opacity: 0;
-    left: 36.5%;
-  }
-
-  75% {
-    opacity: 0.5s;
-  }
-
-  to {
-    top: 9.5%;
-    opacity: 1;
-    left: 36.5%;
-  }
-}
-
-@keyframes slide7 {
-  from {
-    opacity: 0;
-    left: 41.5%;
-  }
-
-  75% {
-    opacity: 0.5;
-  }
-
-  to {
-    top: 9.5%;
-    opacity: 1;
-    left: 41.5%;
   }
 }
 
