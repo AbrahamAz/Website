@@ -60,19 +60,20 @@ body {
 
 .ani-1 {
   width: 400px;
-  left: 38.5%;
   top: 30%;
-  animation-name: slide;
-  animation-duration: 3.8s;
+  opacity: 0;
+  animation-name: slide5;
+  animation-duration: 4.2s;
   animation-timing-function: ease;
 }
 
 .ani-2 {
   width: 400px;
-  left: 38.5%;
-  top: 30%;
-  animation-name: slide;
-  animation-duration: 3.6s;
+  left: 40%;
+  top: 30.25%;
+  transform: rotate(49deg);
+  animation-name: slide4;
+  animation-duration: 3.9s;
   animation-timing-function: ease;
 }
 
@@ -80,39 +81,210 @@ body {
   width: 400px;
   left: 38.5%;
   top: 30%;
-  animation-name: slide;
-  animation-duration: 3.4s;
+  opacity: 0;
+  animation-name: slide3;
+  animation-duration: 3.6s;
   /* animation-timing-function: ease; */
 }
 
 .ani-4 {
   width: 400px;
-  left: 38.5%;
+  left: 30%;
   top: 30%;
-  animation-name: slide;
-  animation-duration: 3.2s;
+  transform: rotate(222deg);
+  animation-name: slide2;
+  animation-duration: 3.6s;
   animation-timing-function: ease;
 }
 
 .ani-5 {
   width: 400px;
-  left: 38.5%;
   top: 30%;
-  animation-name: slide;
+  opacity: 0;
+  animation-name: slide1;
   animation-duration: 3s;
   animation-timing-function: ease;
 }
 
-@keyframes slide {
+.ani-6 {
+  width: 400px;
+  top: 9.5%;
+  left: 36.5%;
+  animation-name: slide6;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+}
+
+.ani-7 {
+  width: 400px;
+  top: 9.5%;
+  left: 41.5%;
+  animation-name: slide7;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+}
+
+/* .lign {
+  width: 1px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid #fff;
+  top: 37%;
+  left: 61.3%;
+  opacity: 0;
+  animation: popping 1s infinite;
+} */
+@keyframes slide1 {
+  from {
+    top: -40%;
+    transform: rotate(-60deg);
+    opacity: 0;
+    left: 38.5%;
+  }
+
+  75% {
+    top: 30%;
+    transform: rotate(0deg);
+    opacity: 1;
+    left: 38.5%;
+  }
+
+  to {
+    top: 30%;
+    transform: rotate(-360deg);
+    opacity: 0;
+    left: -20vw;
+  }
+}
+
+@keyframes slide2 {
+  from {
+    top: -40%;
+    transform: rotate(-60deg);
+    opacity: 0;
+    left: 38.5%;
+  }
+
+  75% {
+    top: 30%;
+    transform: rotate(0deg);
+    opacity: 1;
+    left: 38.5%;
+  }
+
+  50% {
+    left: 38.5%;
+  }
+
+  to {
+    left: 30%;
+  }
+}
+
+@keyframes slide3 {
   from {
     top: -40%;
     transform: rotate(-60deg);
     opacity: 0;
   }
 
-  to {
+  75% {
     top: 30%;
     transform: rotate(0deg);
     opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide4 {
+  from {
+    top: -40%;
+    transform: rotate(-60deg);
+    opacity: 0;
+    left: 38.5%;
+  }
+
+  75% {
+    top: 30%;
+    transform: rotate(0deg);
+    opacity: 1;
+    left: 38.5%;
+  }
+
+  to {
+    transform: rotate(49deg);
+    opacity: 1;
+    top: 30.25%;
+    left: 40%;
+  }
+}
+
+@keyframes slide5 {
+  from {
+    top: -40%;
+    transform: rotate(-60deg);
+    opacity: 0;
+    left: 38.5%;
+  }
+
+  75% {
+    top: 30%;
+    transform: rotate(0deg);
+    opacity: 1;
+    left: 38.5%;
+  }
+
+  to {
+    top: 30%;
+    transform: rotate(360deg);
+    opacity: 0;
+    left: 120vw;
+  }
+}
+
+@keyframes slide6 {
+  from {
+    opacity: 0;
+    left: 36.5%;
+  }
+
+  75% {
+    opacity: 0.5s;
+  }
+
+  to {
+    top: 9.5%;
+    opacity: 1;
+    left: 36.5%;
+  }
+}
+
+@keyframes slide7 {
+  from {
+    opacity: 0;
+    left: 41.5%;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  to {
+    top: 9.5%;
+    opacity: 1;
+    left: 41.5%;
+  }
+}
+
+@keyframes popping {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
