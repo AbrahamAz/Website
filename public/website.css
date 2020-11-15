@@ -15,14 +15,25 @@ body {
   font-size: 2rem;
 }
 
+.navbar .navbar-brand:hover {
+  color: #fff;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 2rem;
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
 .collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 1.5rem;
 }
 
-.collapse .navbar-nav .nav-item .nav-link:hover {
+.collapse:hover .navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+  font-family: 'Ubuntu Condensed', sans-serif;
   opacity: 0.5;
+  transform: scale(1.1);
 }
 
 .navbar-light .navbar-toggler {
@@ -42,7 +53,12 @@ body {
 .icons a {
   color: white;
   font-size: 2.5rem;
-  margin: 0 2%;
+  margin: 1% 2%;
+}
+
+.fab:hover {
+  opacity: 0.5;
+  transform: scale(1.2);
 }
 
 /* LOGO Section */
